@@ -1,12 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Layout } from "antd";
+const { Content } = Layout;
+import HeaderPage from "./layouts/HeaderPage";
+import FooterPage from "./layouts/FooterPage";
+import AppRoutes from "./routes/AppRoutes";
+import HeaderContent from "./layouts/HeaderContent";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
+    <Router>
+      <Layout className="layout">
+        <HeaderPage />
+        <Content>
+          <AppRoutes />
+        </Content>
+        {/* <FooterPage /> */}
+      </Layout>
+    </Router>
   );
-}
+};
 
 export default App;
