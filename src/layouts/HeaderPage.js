@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout, Menu } from "antd";
-const { Header } = Layout;
 import { Link } from "react-router-dom";
+const { Header } = Layout;
 
 const HeaderPage = () => {
   return (

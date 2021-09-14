@@ -4,6 +4,7 @@ body {
 .ant-layout-header,
 .ant-menu {
   background: #1175bb;
+  height: 50px;
 }
 .ant-menu-item,
 .ant-menu-item:hover {
@@ -25,9 +26,7 @@ body {
 }
 .ant-menu-horizontal:not(.ant-menu-dark) {
   > .ant-menu-item-selected::after,
-  .ant-menu-item-selected:hover::after {
-    border-bottom: 2px solid #fff;
-  }
+  .ant-menu-item-selected:hover::after,
   .ant-menu-item:hover::after {
     border-bottom: 2px solid #fff;
   }
@@ -60,6 +59,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.header-content {
   h1 {
     margin-bottom: 0px;
     text-transform: uppercase;
