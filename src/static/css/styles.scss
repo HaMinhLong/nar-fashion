@@ -1,14 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
+$mainColor: #1175bb;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  margin-bottom: 0px;
+}
 body {
+  font-family: "Open Sans", sans-serif;
   background: #f0f2f5;
+}
+*::-webkit-scrollbar {
+  /* WebKit */
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  width: 4px;
+  height: 100%;
+}
+*::-webkit-scrollbar-thumb {
+  background: $mainColor;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
 }
 .ant-layout-header,
 .ant-menu {
-  background: #1175bb;
+  background: $mainColor;
   height: 50px;
+  line-height: 50px;
+}
+.ant-layout-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
 }
 .ant-menu-item,
 .ant-menu-item:hover {
   .ant-menu-title-content {
+    display: inline-block;
+    margin-bottom: 20px !important;
     a {
       color: #fff;
     }
@@ -35,6 +70,7 @@ body {
 .site-layout-content {
   min-height: 80vh;
   padding: 10px 20px;
+  margin-top: 100px;
 }
 #components-layout-demo-top {
   .logo {
@@ -53,6 +89,10 @@ body {
   }
 }
 .header-content {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  z-index: 10000;
   height: 50px;
   background: #fff;
   padding: 0px 50px;
