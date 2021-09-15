@@ -5,12 +5,15 @@ $mainColor: #1175bb;
   padding: 0;
   box-sizing: border-box;
 }
-p {
+p,
+a,
+li {
   margin-bottom: 0px;
 }
 body {
   font-family: "Open Sans", sans-serif;
   background: #f0f2f5;
+  font-size: 16px;
 }
 *::-webkit-scrollbar {
   /* WebKit */

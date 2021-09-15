@@ -72,7 +72,7 @@ const List = () => {
             </Row>
           </Col>
           <Col xs={24} md={25} className="education">
-            <Row gutter={[32, 20]}>
+            <Row gutter={[0, 20]}>
               <Col xs={24} md={24}>
                 <Row>
                   <Col xs={7} md={7} className="title-box">
@@ -99,7 +99,7 @@ const List = () => {
             </Row>
           </Col>
           <Col xs={24} md={25} className="experience">
-            <Row gutter={[32, 20]}>
+            <Row gutter={[0, 20]}>
               <Col xs={24} md={24}>
                 <Row>
                   <Col xs={7} md={7} className="title-box">
@@ -154,7 +154,7 @@ const List = () => {
             </Row>
           </Col>
           <Col xs={24} md={25} className="activities">
-            <Row gutter={[32, 20]}>
+            <Row gutter={[0, 20]}>
               <Col xs={24} md={24}>
                 <Row>
                   <Col xs={7} md={7} className="title-box">
